@@ -1,9 +1,19 @@
 {
-  "generated": "2026-10-02T07:21:34Z",
+  "generated": "2026-10-02T07:46:07Z",
   "engine": "Persistent Product Awareness Engine - step 1 (PRODUCT-MARKETING-ENGINE.md s3)",
   "base_url": "https://davoodnassehi.github.io/s5-product-catalogue/",
-  "repo": "https://github.com/davoodnasehi/s5-product-catalogue",
-  "hosting": "GitHub Pages (main branch, repo root)",
+  "repo": "https://github.com/davoodnassehi/s5-product-catalogue",
+  "hosting": "GitHub Pages (main branch, repo root) — enabled, build+deployment report success, but the Pages CDN is not yet serving this account (see hosting_status)",
+  "hosting_status": {
+    "github_pages_enabled": true,
+    "pages_build": "built",
+    "pages_cdn": "404 Site not found at the time of writing — account-level provisioning issue on GitHub's side, reproduced on a second unrelated repo and on a throwaway probe repo",
+    "repo_browse_url": "https://github.com/davoodnassehi/s5-product-catalogue",
+    "raw_content_path": "https://raw.githubusercontent.com/davoodnassehi/s5-product-catalogue/main/",
+    "live_mirror_now": "https://raw.githack.com/davoodnasehi/s5-product-catalogue/main/index.html",
+    "live_mirror_now_note": "raw.githack serves the same repo tree with correct HTML/CSS/PNG content types while Pages provisions. Swap to the Pages URL once the CDN resolves, or point a subdomain at mining-iot.com / s5system.com.",
+    "next_action": "Re-check the Pages URL later; if still 404, publish the same folder to the existing WordPress hosts (mining-iot.com or s5system.com) under /products/."
+  },
   "contact": "info@s5system.com",
   "source_docs": [
     "C:/Users/DN/s5-radar/PRODUCT-MARKETING-ENGINE.md",
