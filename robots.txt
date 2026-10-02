@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /products/bolt-tension-monitor.html
 
-Sitemap: https://davoodnassehi.github.io/s5-product-catalogue/sitemap.xml
+Sitemap: https://davoodnasehi.github.io/s5-product-catalogue/sitemap.xml

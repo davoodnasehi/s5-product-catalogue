@@ -1,30 +1,26 @@
-# Live mirror (while GitHub Pages provisions)
+# Live
 
-The catalogue is committed and public in this repo. GitHub Pages is enabled and both the
-build and the deployment report **success**, but the Pages CDN is currently answering
-`404 Site not found` for this account (reproduced on a second unrelated repo, so it is
-account-level, not a mistake in this repo).
-
-Until that resolves, the same files are served correctly here:
+The catalogue is published on GitHub Pages. Every page below returns HTTP 200:
 
 | What | URL |
 |---|---|
-| Catalogue index | https://raw.githack.com/davoodnasehi/s5-product-catalogue/main/index.html |
-| RotaMon | https://raw.githack.com/davoodnasehi/s5-product-catalogue/main/products/rotamon.html |
-| WearMon | https://raw.githack.com/davoodnasehi/s5-product-catalogue/main/products/wearmon.html |
-| GETsmart | https://raw.githack.com/davoodnasehi/s5-product-catalogue/main/products/getsmart.html |
-| Genset & lighting telematics | https://raw.githack.com/davoodnasehi/s5-product-catalogue/main/products/genset-lighting-telematics.html |
-| Workshop line | https://raw.githack.com/davoodnasehi/s5-product-catalogue/main/products/workshop-line.html |
-| Bus safety mesh | https://raw.githack.com/davoodnasehi/s5-product-catalogue/main/products/bus-safety-mesh.html |
-| Bolt-tension (held) | https://raw.githack.com/davoodnasehi/s5-product-catalogue/main/products/bolt-tension-monitor.html |
-| Manifest | https://raw.githack.com/davoodnasehi/s5-product-catalogue/main/manifest.json |
+| Catalogue index | https://davoodnasehi.github.io/s5-product-catalogue/ |
+| RotaMon | https://davoodnasehi.github.io/s5-product-catalogue/products/rotamon.html |
+| WearMon | https://davoodnasehi.github.io/s5-product-catalogue/products/wearmon.html |
+| GETsmart | https://davoodnasehi.github.io/s5-product-catalogue/products/getsmart.html |
+| Genset & lighting telematics | https://davoodnasehi.github.io/s5-product-catalogue/products/genset-lighting-telematics.html |
+| Workshop line | https://davoodnasehi.github.io/s5-product-catalogue/products/workshop-line.html |
+| Bus safety mesh | https://davoodnasehi.github.io/s5-product-catalogue/products/bus-safety-mesh.html |
+| Bolt-tension (held) | https://davoodnasehi.github.io/s5-product-catalogue/products/bolt-tension-monitor.html |
+| Manifest | https://davoodnasehi.github.io/s5-product-catalogue/manifest.json |
+| Sitemap | https://davoodnasehi.github.io/s5-product-catalogue/sitemap.xml |
 
-Browsable repo: https://github.com/davoodnassehi/s5-product-catalogue
+Browsable repo: https://github.com/davoodnasehi/s5-product-catalogue
 
-**Preferred fix:** publish the same folder to the existing WordPress hosts
-(mining-iot.com or s5system.com) under `/products/` — that also puts the pages on the
-domains that already carry S5's search authority. Once the Pages CDN resolves, the
-`https://davoodnassehi.github.io/s5-product-catalogue/` URLs in `manifest.json` and the
-`canonical`/`og` tags become the live ones.
+An earlier handover reported the Pages CDN answering `404 Site not found` for this
+account. That was a wrong hostname: the checks used `davoodnass**e**hi.github.io`
+(double-s) instead of the account handle `davoodnasehi`. The correct Pages host has
+been serving since the first deploy.
 
-`raw.githack.com` is a development mirror (soft rate limit), not a permanent host.
+`mining-iot.com/products/` and `s5system.com/products/` stay available as an optional
+branded-domain mirror later; no WordPress upload is required for the catalogue to be live.

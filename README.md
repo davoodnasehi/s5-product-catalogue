@@ -4,7 +4,7 @@ Static, one-page-per-product catalogue for the S5 stored-product portfolio.
 Part of the **Persistent Product Awareness Engine** (Radar §3-H, blueprint
 `PRODUCT-MARKETING-ENGINE.md` §3). Zero-cost, permanent, SEO-hosted on GitHub Pages.
 
-**Live:** https://davoodnassehi.github.io/s5-product-catalogue/
+**Live:** https://davoodnasehi.github.io/s5-product-catalogue/
 
 ## Pages
 

@@ -1,18 +1,18 @@
 {
-  "generated": "2026-10-02T07:46:07Z",
+  "generated": "2026-10-02T07:53:51Z",
   "engine": "Persistent Product Awareness Engine - step 1 (PRODUCT-MARKETING-ENGINE.md s3)",
-  "base_url": "https://davoodnassehi.github.io/s5-product-catalogue/",
-  "repo": "https://github.com/davoodnassehi/s5-product-catalogue",
-  "hosting": "GitHub Pages (main branch, repo root) — enabled, build+deployment report success, but the Pages CDN is not yet serving this account (see hosting_status)",
+  "base_url": "https://davoodnasehi.github.io/s5-product-catalogue/",
+  "repo": "https://github.com/davoodnasehi/s5-product-catalogue",
+  "hosting": "GitHub Pages (Actions workflow build, main branch, repo root) — live",
   "hosting_status": {
     "github_pages_enabled": true,
     "pages_build": "built",
-    "pages_cdn": "404 Site not found at the time of writing — account-level provisioning issue on GitHub's side, reproduced on a second unrelated repo and on a throwaway probe repo",
-    "repo_browse_url": "https://github.com/davoodnassehi/s5-product-catalogue",
-    "raw_content_path": "https://raw.githubusercontent.com/davoodnassehi/s5-product-catalogue/main/",
-    "live_mirror_now": "https://raw.githack.com/davoodnasehi/s5-product-catalogue/main/index.html",
-    "live_mirror_now_note": "raw.githack serves the same repo tree with correct HTML/CSS/PNG content types while Pages provisions. Swap to the Pages URL once the CDN resolves, or point a subdomain at mining-iot.com / s5system.com.",
-    "next_action": "Re-check the Pages URL later; if still 404, publish the same folder to the existing WordPress hosts (mining-iot.com or s5system.com) under /products/."
+    "pages_cdn": "serving — index, all 7 product pages, assets, manifest.json and sitemap.xml return HTTP 200",
+    "live_url": "https://davoodnasehi.github.io/s5-product-catalogue/",
+    "repo_browse_url": "https://github.com/davoodnasehi/s5-product-catalogue",
+    "raw_content_path": "https://raw.githubusercontent.com/davoodnasehi/s5-product-catalogue/main/",
+    "next_action": "Optional only: mirror the folder under mining-iot.com/products/ or s5system.com/products/ for branded-domain SEO. Not required for a permanent URL.",
+    "note": "An earlier check reported 404 Site not found for davoodnassehi.github.io (double-s). That hostname does not exist; the account handle is davoodnasehi. No GitHub provisioning fault."
   },
   "contact": "info@s5system.com",
   "source_docs": [
@@ -27,7 +27,7 @@
       "title": "RotaMon",
       "nav_label": "RotaMon",
       "file": "products/rotamon.html",
-      "url": "https://davoodnassehi.github.io/s5-product-catalogue/products/rotamon.html",
+      "url": "https://davoodnasehi.github.io/s5-product-catalogue/products/rotamon.html",
       "kicker": "Fixed plant · Condition monitoring · LoRaWAN",
       "cta_kind": "pilot",
       "cta_label": "Request the pilot scope",
@@ -35,14 +35,14 @@
       "triage_verdict": "PILOT NOW #1",
       "noindex": false,
       "hero_image": "assets/s5_product_rotamon_hero.png",
-      "hero_image_url": "https://davoodnassehi.github.io/s5-product-catalogue/assets/s5_product_rotamon_hero.png"
+      "hero_image_url": "https://davoodnasehi.github.io/s5-product-catalogue/assets/s5_product_rotamon_hero.png"
     },
     {
       "slug": "wearmon",
       "title": "WearMon",
       "nav_label": "WearMon",
       "file": "products/wearmon.html",
-      "url": "https://davoodnassehi.github.io/s5-product-catalogue/products/wearmon.html",
+      "url": "https://davoodnasehi.github.io/s5-product-catalogue/products/wearmon.html",
       "kicker": "Mineral processing · Wear liners · Flex-PCB sensing",
       "cta_kind": "pilot",
       "cta_label": "Request the pilot scope",
@@ -50,14 +50,14 @@
       "triage_verdict": "PILOT NOW #2",
       "noindex": false,
       "hero_image": "assets/s5_product_wearmon_hero.png",
-      "hero_image_url": "https://davoodnassehi.github.io/s5-product-catalogue/assets/s5_product_wearmon_hero.png"
+      "hero_image_url": "https://davoodnasehi.github.io/s5-product-catalogue/assets/s5_product_wearmon_hero.png"
     },
     {
       "slug": "getsmart",
       "title": "GETsmart",
       "nav_label": "GETsmart",
       "file": "products/getsmart.html",
-      "url": "https://davoodnassehi.github.io/s5-product-catalogue/products/getsmart.html",
+      "url": "https://davoodnasehi.github.io/s5-product-catalogue/products/getsmart.html",
       "kicker": "Mining · Crusher protection · Embedded sensing",
       "cta_kind": "soft",
       "cta_label": "Request the GETsmart one-pager",
@@ -65,14 +65,14 @@
       "triage_verdict": "WATCH",
       "noindex": false,
       "hero_image": "assets/s5_product_getsmart_hero.png",
-      "hero_image_url": "https://davoodnassehi.github.io/s5-product-catalogue/assets/s5_product_getsmart_hero.png"
+      "hero_image_url": "https://davoodnasehi.github.io/s5-product-catalogue/assets/s5_product_getsmart_hero.png"
     },
     {
       "slug": "bolt-tension-monitor",
       "title": "Smart Bolt Tension Monitor",
       "nav_label": "Smart bolt tension monitor",
       "file": "products/bolt-tension-monitor.html",
-      "url": "https://davoodnassehi.github.io/s5-product-catalogue/products/bolt-tension-monitor.html",
+      "url": "https://davoodnasehi.github.io/s5-product-catalogue/products/bolt-tension-monitor.html",
       "kicker": "Structural health · Bolted connections · Load-sensing washers",
       "cta_kind": "soft",
       "cta_label": "Request the one-pager",
@@ -80,14 +80,14 @@
       "triage_verdict": "WATCH + rebrand required",
       "noindex": true,
       "hero_image": "assets/s5_product_bolt-tension_hero.png",
-      "hero_image_url": "https://davoodnassehi.github.io/s5-product-catalogue/assets/s5_product_bolt-tension_hero.png"
+      "hero_image_url": "https://davoodnasehi.github.io/s5-product-catalogue/assets/s5_product_bolt-tension_hero.png"
     },
     {
       "slug": "genset-lighting-telematics",
       "title": "Genset & lighting-tower telematics",
       "nav_label": "Genset & lighting telematics",
       "file": "products/genset-lighting-telematics.html",
-      "url": "https://davoodnassehi.github.io/s5-product-catalogue/products/genset-lighting-telematics.html",
+      "url": "https://davoodnasehi.github.io/s5-product-catalogue/products/genset-lighting-telematics.html",
       "kicker": "Plant hire · Remote assets · Fuel · Light · GNSS",
       "cta_kind": "soft",
       "cta_label": "Request the telematics one-pager",
@@ -95,14 +95,14 @@
       "triage_verdict": "PARK",
       "noindex": false,
       "hero_image": "assets/s5_product_genset-telematics_hero.png",
-      "hero_image_url": "https://davoodnassehi.github.io/s5-product-catalogue/assets/s5_product_genset-telematics_hero.png"
+      "hero_image_url": "https://davoodnasehi.github.io/s5-product-catalogue/assets/s5_product_genset-telematics_hero.png"
     },
     {
       "slug": "workshop-line",
       "title": "Workshop line",
       "nav_label": "Workshop line",
       "file": "products/workshop-line.html",
-      "url": "https://davoodnassehi.github.io/s5-product-catalogue/products/workshop-line.html",
+      "url": "https://davoodnasehi.github.io/s5-product-catalogue/products/workshop-line.html",
       "kicker": "Automotive workshops · SMB kits",
       "cta_kind": "soft",
       "cta_label": "Request the workshop kit one-pager",
@@ -110,14 +110,14 @@
       "triage_verdict": "KIT CANDIDATE",
       "noindex": false,
       "hero_image": "assets/s5_product_workshop-line_hero.png",
-      "hero_image_url": "https://davoodnassehi.github.io/s5-product-catalogue/assets/s5_product_workshop-line_hero.png"
+      "hero_image_url": "https://davoodnasehi.github.io/s5-product-catalogue/assets/s5_product_workshop-line_hero.png"
     },
     {
       "slug": "bus-safety-mesh",
       "title": "Bus passenger-safety mesh",
       "nav_label": "Bus safety mesh",
       "file": "products/bus-safety-mesh.html",
-      "url": "https://davoodnassehi.github.io/s5-product-catalogue/products/bus-safety-mesh.html",
+      "url": "https://davoodnasehi.github.io/s5-product-catalogue/products/bus-safety-mesh.html",
       "kicker": "Bus & coach · BLE mesh · Cabin monitoring",
       "cta_kind": "soft",
       "cta_label": "Request the bus mesh one-pager",
@@ -125,7 +125,7 @@
       "triage_verdict": "PARK",
       "noindex": false,
       "hero_image": "assets/s5_product_bus-safety-mesh_hero.png",
-      "hero_image_url": "https://davoodnassehi.github.io/s5-product-catalogue/assets/s5_product_bus-safety-mesh_hero.png"
+      "hero_image_url": "https://davoodnasehi.github.io/s5-product-catalogue/assets/s5_product_bus-safety-mesh_hero.png"
     }
   ],
   "notes": [
