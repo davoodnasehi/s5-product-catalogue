@@ -1,0 +1,98 @@
+/* S5 System product catalogue — shared stylesheet (2026-10-02) */
+:root{
+  --ink:#14212C; --ink-soft:#42586B; --ink-mute:#6B8095;
+  --blue:#0B5C9E; --blue-deep:#083F6D; --blue-tint:#E8F1F9;
+  --teal:#0E7C86; --teal-tint:#E4F2F3;
+  --amber:#8A5A00; --amber-tint:#FDF3E0; --amber-line:#E8C88A;
+  --paper:#FFFFFF; --panel:#F5F8FB; --line:#DBE3EB; --line-soft:#EAF0F5;
+  --radius:10px; --maxw:960px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ---- header ---- */
+.site-head{background:var(--ink);color:#fff}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.wordmark{font-weight:700;letter-spacing:.14em;font-size:15px;color:#fff;text-transform:uppercase}
+.wordmark span{color:#7FB3DC}
+.head-nav{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#9FB4C6}
+.head-nav a{color:#CFE0EE}
+
+/* ---- hero ---- */
+.hero{background:#0E1A24}
+.hero img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover}
+.hero-cap{background:#0E1A24;color:#8FA6B8;font-size:12px;letter-spacing:.05em;padding:8px 0 0}
+.hero-cap .wrap{padding:0 24px}
+
+/* ---- page head ---- */
+.page-head{padding:34px 0 8px;border-bottom:1px solid var(--line)}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);margin:0 0 12px}
+h1{font-size:34px;line-height:1.2;margin:0 0 12px;letter-spacing:-.015em}
+.lede{font-size:18px;color:var(--ink-soft);margin:0 0 20px;max-width:70ch}
+.chip{display:inline-block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin:0 0 6px}
+.chip.ok{background:var(--teal-tint);color:#0A5A62;border:1px solid #B8DCDE}
+.chip.info{background:var(--blue-tint);color:var(--blue-deep);border:1px solid #C2DAED}
+.chip.warn{background:var(--amber-tint);color:var(--amber);border:1px solid var(--amber-line)}
+
+/* ---- sections ---- */
+main{padding:8px 0 40px}
+section{padding:26px 0;border-bottom:1px solid var(--line-soft)}
+section:last-of-type{border-bottom:0}
+h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 14px}
+h2 .n{color:var(--ink-mute);font-weight:600;margin-right:8px}
+h3{font-size:16px;margin:22px 0 6px}
+p{margin:0 0 14px;max-width:74ch}
+ul{margin:0 0 14px;padding-left:22px;max-width:74ch}
+li{margin:0 0 6px}
+.physics{background:var(--panel);border-left:3px solid var(--teal);padding:18px 22px;border-radius:0 var(--radius) var(--radius) 0}
+.physics p:last-child{margin-bottom:0}
+.callout{background:var(--amber-tint);border:1px solid var(--amber-line);border-radius:var(--radius);padding:14px 16px;font-size:15px;color:#4A3A12;max-width:74ch}
+.callout strong{color:var(--amber)}
+table.specs{width:100%;border-collapse:collapse;font-size:15px;max-width:74ch}
+table.specs th,table.specs td{text-align:left;vertical-align:top;padding:10px 14px 10px 0;border-bottom:1px solid var(--line-soft)}
+table.specs th{width:34%;color:var(--ink-soft);font-weight:600}
+table.specs tr:last-child td,table.specs tr:last-child th{border-bottom:0}
+.cases{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.case{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.case h3{margin:0 0 6px;font-size:15px}
+.case p{margin:0;font-size:14.5px;color:var(--ink-soft)}
+.who{background:var(--blue-tint);border-radius:var(--radius);padding:16px 20px;max-width:74ch}
+.who strong{color:var(--blue-deep)}
+
+/* ---- cta ---- */
+.cta{border:1px solid var(--blue);border-radius:var(--radius);padding:26px 28px;background:linear-gradient(180deg,#F3F8FC 0%,#FFFFFF 100%)}
+.cta h2{color:var(--blue-deep);margin-bottom:10px}
+.cta .btn{display:inline-block;background:var(--blue);color:#fff;font-weight:600;font-size:16px;padding:13px 24px;border-radius:8px;margin:6px 0 10px}
+.cta .btn:hover{background:var(--blue-deep);text-decoration:none}
+.cta .fine{font-size:13.5px;color:var(--ink-mute);margin:0}
+.note{font-size:13.5px;color:var(--ink-mute);max-width:74ch}
+
+/* ---- banner ---- */
+.banner{background:var(--amber-tint);border:1px solid var(--amber-line);border-left:5px solid var(--amber);border-radius:var(--radius);padding:16px 20px;margin:22px 0 0;color:#4A3A12;font-size:15px;max-width:74ch}
+.banner strong{color:var(--amber)}
+
+/* ---- footer ---- */
+.site-foot{background:var(--ink);color:#9FB4C6;margin-top:0;padding:34px 0 40px;font-size:14px}
+.site-foot .wrap{display:block}
+.site-foot h4{color:#fff;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 10px}
+.site-foot p{max-width:78ch;color:#A9BDCD}
+.site-foot a{color:#CFE0EE}
+.foot-bio{border-top:1px solid #2A3B49;margin-top:22px;padding-top:20px}
+
+/* ---- index cards ---- */
+.cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin:8px 0 0}
+.card{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.card img{display:block;width:100%;height:150px;object-fit:cover}
+.card .body{padding:16px 18px 18px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0 0 10px;font-size:14.5px;color:var(--ink-soft)}
+.card .tag{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute)}
+@media (max-width:600px){h1{font-size:27px}.lede{font-size:16.5px}.cta{padding:20px}}

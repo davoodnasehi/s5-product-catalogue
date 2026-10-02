@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RotaMon — S5 System product catalogue</title>
+<meta name="description" content="A multi-parameter condition-monitoring node that hears a machine begin to fail before it starts to vibrate.">
+<meta name="author" content="S5 System Pty Ltd">
+  <link rel="canonical" href="https://davoodnassehi.github.io/s5-product-catalogue/products/rotamon.html">
+<meta property="og:title" content="RotaMon — S5 System product catalogue">
+<meta property="og:description" content="A multi-parameter condition-monitoring node that hears a machine begin to fail before it starts to vibrate.">
+<meta property="og:type" content="article">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="../index.html">S5 <span>System</span></a>
+    <nav class="head-nav"><a href="../index.html">Product catalogue</a> &nbsp;&middot;&nbsp; Product information</nav>
+  </div>
+</header>
+
+<div class="hero"><img src="../assets/s5_product_rotamon_hero.png" alt="Three-dimensional render of a small rectangular S5 condition-monitoring node bracket-mounted to an industrial pump motor housing."></div>
+<div class="hero-cap"><div class="wrap">Placeholder 3D render &mdash; photographic product imagery is pending a product photo session.</div></div>
+<div class="wrap page-head">
+<p class="kicker">Fixed plant &middot; Condition monitoring &middot; LoRaWAN</p>
+<h1>RotaMon</h1>
+<p class="lede">A multi-parameter condition-monitoring node that hears a machine begin to fail before it starts to vibrate.</p>
+<p><span class="chip ok">Pilot programme &mdash; open</span></p>
+</div>
+<main><div class="wrap">
+<section><h2><span class="n">01</span>The problem</h2>
+        <p>A bearing does not fail suddenly. A defect begins as a microscopic irregularity on a raceway,
+        generates a shock pulse once per rotation, and grows over weeks into spalling, heat and finally
+        seizure. The evidence of that progression exists from very early on &mdash; but almost all of it sits
+        in the <em>high-frequency and acoustic</em> bands, and that is exactly where most monitoring misses it.</p>
+        <p>Two common approaches both see the machine too late. A monthly handheld route observes a machine for
+        around twenty minutes a month. Vibration-only wireless sensors need the defect to be energetic enough
+        to register in the acceleration spectrum &mdash; and by then the failure is close. Acoustic energy, which is
+        the earliest and cleanest indicator, is usually the last thing measured.</p>
+        <p>On a remote site, the cost of that gap is measured in production hours, not repair hours: an unplanned
+        conveyor-drive or mill-motor stoppage takes a crew, a crane and a shutdown window with it.</p>
+        </section>
+<section><h2><span class="n">02</span>How it works, in plain language</h2><div class="physics">
+        <p>RotaMon is a 30 &times; 20 &times; 7&nbsp;mm battery node in an IP68 enclosure. It carries a 9-axis
+        inertial measurement unit, a temperature sensor, a wideband vibration element and a microphone.</p>
+        <p>The microphone is the point. When metal begins to defect it rings at frequencies far above anything the
+        machine's normal rotation produces. RotaMon samples that acoustic band, extracts a small set of features
+        <em>on the device itself</em>, and runs an onboard inference model &mdash; it does not stream raw waveforms
+        to the cloud. When the acoustic signature drifts away from the machine's learned baseline, the node raises
+        an alert over LoRaWAN before a conventional vibration spectrum shows anything.</p>
+        <p>The same node also reports temperature and vibration trend, so one device covers the three parameters
+        that matter rather than three separate instruments.</p>
+        </div></section>
+<section><h2><span class="n">03</span>Key specifications</h2><table class="specs"><tr><th>Form factor</th><td>30 &times; 20 &times; 7&nbsp;mm, bracket-mount, IP68</td></tr><tr><th>Parameters</th><td>Vibration + temperature + acoustic in one node; 9-axis IMU</td></tr><tr><th>Onboard processing</th><td>STM32L-class ultra-low-power MCU; on-device feature extraction and inference</td></tr><tr><th>Sensing range</th><td>0&ndash;150&nbsp;&deg;C range target &mdash; confirmed against your asset's surface temperature during scoping</td></tr><tr><th>Radio</th><td>LoRaWAN; private-network capable; downlink configuration</td></tr><tr><th>Alerting</th><td>Threshold and learned-baseline drift; weekly alert digest during a pilot</td></tr></table></section>
+<section><h2><span class="n">04</span>Where it is used</h2><div class="cases"><div class="case"><h3>Conveyor drive motor and gearbox</h3><p>Detect bearing and gear defects acoustically in the window between monthly routes.</p></div><div class="case"><h3>Pump skid</h3><p>Catch cavitation and early impeller wear from the acoustic signature before efficiency drops.</p></div><div class="case"><h3>Unstaffed fixed plant</h3><p>Report condition from a remote MCC or pump station without sending a technician to it.</p></div></div></section>
+<section><h2><span class="n">05</span>Who this is for</h2><div class="who"><p style="margin:0"><strong>Suited to:</strong> Reliability and maintenance engineers responsible for fixed plant at mine sites, processing plants, water utilities and heavy manufacturing &mdash; where one unplanned stoppage costs more than a year of monitoring.</p></div></section>
+<section><h2><span class="n">06</span>Where S5 fits</h2>
+        <p>S5 supplies RotaMon together with functional-safety engineering from S5 Consultants. That matters in a
+        specific, honest way: a sensor is not a safety function, and no sensor carries a SIL rating by itself.
+        What condition-monitoring data <em>can</em> support is <strong>diagnostic-coverage evidence</strong> &mdash; a
+        defensible claim for the fraction of dangerous failures the monitoring actually detects. That claim is what
+        underpins a proof-test argument: stretching a proof-test interval from 12 months to 24 months roughly
+        doubles PFD<sub>avg</sub>, so the interval can only move if diagnostic coverage can be evidenced for it.</p>
+        <p>So the product is the node. The deliverable is the evidence.</p>
+        </section>
+<section class="cta" style="border-bottom:0"><h2><span class="n">07</span>8-week paid Instrumentation Pilot</h2>
+        <p>The pilot is deliberately narrow, and it is a purchase rather than a survey:</p>
+        <ul>
+          <li>2&ndash;4 fixed-plant points (conveyor drive, pump skid, LV motor).</li>
+          <li>Multi-parameter nodes plus gateway, IP68.</li>
+          <li>Eight weeks of data with a weekly alert digest.</li>
+          <li>Deliverables: alert-precision report, diagnostic-coverage / proof-test-interval evidence pack
+              (IEC&nbsp;61511 framing), and a go/no-go recommendation.</li>
+          <li>A$4,900 &mdash; credited in full to a monitoring retainer signed within 30&nbsp;days.</li>
+          <li>Exit on request: hardware uninstalled, data returned, no obligation.</li>
+        </ul>
+        <a class="btn" href="mailto:info@s5system.com?subject=RotaMon%20-%20request%20the%208-week%20Instrumentation%20Pilot%20scope">Request the pilot scope &rarr;</a><p class="fine">Scoping is a short call to confirm the asset list and the evidence you need. Nothing is installed until a scope is signed.</p></section>
+</div></main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <h4>About this page</h4>
+    <p>This page is published as product information, not as a sales approach. S5 does not cold-sell: nothing follows unless you ask for it.</p>
+    <div class="foot-bio">
+      <h4>Who produces this</h4>
+      <p>S5 System Pty Ltd is a Perth (Western Australia) industrial control-systems and IoT engineering firm. The company's assurance and functional-safety work is led by Davoud Nassehi — PhD (Systems Engineering &amp; Renewable Energy), Certified Functional Safety Expert (CFSE), National Engineering Register (NER), PEng, PMP, MBA.</p>
+      <p>Product catalogue &middot; generated 2026-10-02 &middot;
+         <a href="mailto:info@s5system.com">info@s5system.com</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
