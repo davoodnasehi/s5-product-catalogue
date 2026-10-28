@@ -9,9 +9,9 @@ OPPORTUNITY-RADAR.md 3-A / 3-H.
 import os, json, shutil, html, re
 from datetime import datetime, timezone
 
-REPO = r"C:/Users/DN/s5-product-catalogue"
-WS = r"C:/Users/DN/AppData/Local/hermes/kanban/workspaces/t_f0fb9535/catalogue"
-ASSETS_SRC = os.path.join(WS, "assets")
+REPO = os.environ.get("S5_CAT_REPO", r"C:/Users/DN/s5-product-catalogue")
+WS = os.environ.get("S5_CAT_WS", r"C:/Users/DN/AppData/Local/hermes/kanban/workspaces/t_f0fb9535/catalogue")
+ASSETS_SRC = os.environ.get("S5_CAT_ASSETS", os.path.join(WS, "assets"))
 ASSETS_DST = os.path.join(REPO, "assets")
 PROD_DST = os.path.join(REPO, "products")
 MD_DST = os.path.join(REPO, "markdown")
