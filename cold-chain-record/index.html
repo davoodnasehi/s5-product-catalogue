@@ -121,8 +121,40 @@ footer.site p{margin:.35em 0;color:#8b9bad}
 </main>
 <footer class="site">
   <p>S5 System Pty Ltd · ABN 53 623 384 109 · L28, 140 St George's Tce, Perth WA 6000</p>
-  <p>Index page for the cold chain and food safety product group. Served from GitHub Pages; no tracker.</p>
+  <p>Index page for the cold chain and food safety product group. Served from GitHub Pages; first-party page-view and click counts only, no third-party tracker and no cookie.</p>
 </footer>
 </div>
+<script>
+/* First-party measurement beacon (kanban t_70c75547).
+   The S5 collector cannot see github.io: it sends no CORS header and answers
+   OPTIONS with 405, so a cross-origin fetch() never leaves the browser. This
+   page therefore reports through s5-cat.php on the first-party domain, which
+   relays to the collector with site=catalogue. No cookie, no stored identifier,
+   and a failure to report never blocks a link. */
+(function () {
+  var EP = 'https://s5system.com/s5-cat.php';
+  function send(ev, slug) {
+    try {
+      var img = new Image(1, 1);
+      img.src = EP + '?e=' + encodeURIComponent(ev)
+              + '&p=' + encodeURIComponent(location.pathname)
+              + '&u=' + encodeURIComponent(slug || '')
+              + '&r=' + encodeURIComponent(document.referrer || '');
+    } catch (e) {}
+  }
+  send('page_view', 'index');
+  document.addEventListener('click', function (ev) {
+    var a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+    if (!a) return;
+    var h = a.href || '';
+    if (h.indexOf('s5system.com') === -1) return;
+    var m = /[?&]utm_content=([^&]*)/.exec(h);
+    var slug = m ? decodeURIComponent(m[1]) : '';
+    if (h.indexOf('/contact/') !== -1) { send('quote_form_started', 'contact'); }
+    else if (h.indexOf('.s5system.com') !== -1) { send('sku_click', slug); }
+  }, true);
+})();
+</script>
+<noscript><img src="https://s5system.com/s5-cat.php?e=page_view&amp;p=/s5-product-catalogue/cold-chain-record/&amp;u=noscript" alt="" width="1" height="1" style="position:absolute;left:-9999px"></noscript>
 </body>
 </html>
